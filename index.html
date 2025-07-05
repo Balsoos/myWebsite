@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Sidebar">
+                ☰
+            </button>
+            <div class="sidebar-logo" id="nav-name">Abdurrahman Balsus</div>
+            <div class="sidebar-subtitle" id="nav-title">Cybersecurity Analyst</div>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-tools"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="edit-toggle" class="edit-btn">
+                <i class="fas fa-edit"></i> <span>Admin</span>
+            </button>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-name">Abdurrahman Balsus</h1>
+                    <h2 id="hero-title">Cybersecurity Analyst</h2>
+                    <div class="hero-bio">
+                        <p>Cybersecurity Analyst and Systems Engineer | Security+ Certified | Google Cybersecurity
+                            Certificate Holder | Cloud & SIEM Specialist.</p>
+                    </div>
+                    <div class="hero-summary">
+                        <p>I build, secure, and engineer user-focused systems. With a background in cybersecurity,
+                            certifications like Security+ and Google Cybersecurity, and full-stack project experience, I
+                            aim to bridge security and usability in every product or task I touch.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Get in Touch</a>
+                        <a href="Resume.pdf" class="btn-resume" target="_blank">Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="proflPic.png" alt="Abdurrahman Balsus" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p id="about-intro">I'm a cybersecurity analyst and systems engineer with a background in
+                            computer science and a strong focus on cloud security, threat detection, and infrastructure
+                            hardening. I specialize in building secure systems that prioritize usability and compliance.
+                        </p>
+
+                        <div class="career-highlights">
+                            <h3>Career Highlights</h3>
+                            <p>With hands-on experience in projects ranging from cloud-based SIEM integration to
+                                AI-driven task automation, I've applied skills in:</p>
+                            <ul>
+                                <li>Network security and packet analysis (Wireshark, tcpdump)</li>
+                                <li>Log monitoring and threat detection (Splunk, Chronicle)</li>
+                                <li>Cloud security (AWS, S3, IAM, GuardDuty)</li>
+                                <li>Full-stack development with secure authentication flows</li>
+                            </ul>
+                        </div>
+
+                        <div class="certifications">
+                            <h3>Certifications</h3>
+                            <ul>
+                                <li>CompTIA Security+</li>
+                                <li>Google Cybersecurity Professional Certificate</li>
+                                <li>Working toward AWS Certified Cloud Practitioner</li>
+                            </ul>
+                        </div>
+
+                        <div class="values-statement">
+                            <h3>Why Cybersecurity</h3>
+                            <p>I'm driven by the mission of making digital systems safer and more accessible. I aim to
+                                bring a blend of technical skill and strategic thinking to a team dedicated to securing
+                                meaningful technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3 class="category-title">🔸 Cybersecurity Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">Wireshark</div>
+                            <div class="skill-card">Splunk</div>
+                            <div class="skill-card">Chronicle Security</div>
+                            <div class="skill-card">tcpdump</div>
+                            <div class="skill-card">Cisco Packet Tracer</div>
+                            <div class="skill-card">MITRE ATT&CK / D3fend</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">🔸 Networking & Systems</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">Subnetting & Routing (OSPF, DHCP)</div>
+                            <div class="skill-card">pfSense firewall config</div>
+                            <div class="skill-card">Nmap, Netstat, traceroute</div>
+                            <div class="skill-card">Linux (Ubuntu/Debian)</div>
+                            <div class="skill-card">Bash scripting</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">🔸 Cloud & Infrastructure</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">AWS S3, IAM, GuardDuty</div>
+                            <div class="skill-card">Firebase (auth, storage)</div>
+                            <div class="skill-card">VirtualBox, GNS3, VMware</div>
+                            <div class="skill-card">Docker (basic usage)</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">🔸 Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">HTML, CSS, JavaScript</div>
+                            <div class="skill-card">React (NERO frontend, portfolio site)</div>
+                            <div class="skill-card">Python (scripts, automation)</div>
+                            <div class="skill-card">Node.js, Express</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">🔸 Certifications</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card certification">CompTIA Security+</div>
+                            <div class="skill-card certification">Google Cybersecurity Certificate</div>
+                            <div class="skill-card certification">AWS CCP (In Progress)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-content">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">NERO – AI Personal Assistant for Scheduling & Productivity</h3>
+                            <span class="project-role">Full-Stack Developer</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Built an AI-driven productivity assistant that integrates OpenAI's GPT API for real-time
+                                interaction. Features secure authentication, task/schedule management, calendar syncing,
+                                and reminders.</p>
+                            <div class="project-security">
+                                <strong>Security Features:</strong> Input validation, secure token handling, and data
+                                encryption.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> React, FastAPI, OpenAI API, Tailwind CSS, Firebase
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Balsoos/NERO" target="_blank" rel="noopener"
+                                class="btn-secondary">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Cloud-Based Log Monitoring with SIEM</h3>
+                            <span class="project-role">Log Storage & Threat Analyst</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Configured a centralized log analysis system using AWS S3, Python, and Splunk to ingest
+                                and monitor logs from cloud instances. Built alert rules and dashboards for real-time
+                                threat detection.</p>
+                            <div class="project-security">
+                                <strong>Security Focus:</strong> Incident detection, visibility, and cloud storage
+                                integrity.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> AWS S3, Splunk, Python, Chronicle, Wireshark
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Balsoos/Cloud-Based-Security-as-a-Service" target="_blank"
+                                rel="noopener" class="btn-secondary">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-file-pdf"></i> PDF Write-Up
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Linux Device Management & Automation</h3>
+                            <span class="project-role">Systems Engineer</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Automated provisioning, service monitoring, and patch updates across cloned Ubuntu VM
+                                nodes using Bash scripts. Built to simulate enterprise sysadmin tasks.</p>
+                            <div class="project-security">
+                                <strong>Security Relevance:</strong> Hardened access, enforced user roles, and auditing.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> Bash, VirtualBox, Linux, Cron, SSH
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-play"></i> Demo Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">ICS Security Risk Analysis (MITRE D3fend)</h3>
+                            <span class="project-role">Cybersecurity Researcher</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Analyzed a simulated Cisco ICS network for threats at the zone boundaries, wireless
+                                access, DMZ segmentation, and control system visibility gaps using the MITRE D3fend
+                                framework.</p>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> MITRE D3fend, Cisco Packet Tracer, Wireshark
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-file-pdf"></i> PDF Summary
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Sections Container -->
+        <div id="custom-sections-container">
+            <!-- Custom sections will be populated here -->
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">If you'd like to connect for a role, collaboration, or just to chat
+                        cybersecurity, feel free to reach out:</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a id="contact-email" href="mailto:AbduBalsus@gmail.com">AbduBalsus@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a id="contact-linkedin" href="https://www.linkedin.com/in/abdurrahman-balsus-24720a264"
+                                target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a id="contact-github" href="https://github.com/Balsoos" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-discord"></i>
+                            <a id="contact-discord" href="https://discord.gg/bhTwMDqKWN" target="_blank"
+                                rel="noopener">Discord</a>
+                        </div>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="Resume.pdf" class="btn-resume" target="_blank" rel="noopener">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 <span id="footer-name">Your Name</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
